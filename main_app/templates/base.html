@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <!--[if IE]><![endif]--><!--[if IE 8 ]><html dir="ltr" lang="en" class="ie8"><![endif]--><!--[if IE 9 ]><html dir="ltr" lang="en" class="ie9"><![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html dir="ltr" lang="en"><!--<![endif]--><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Roboindia</title>
+        
+        <meta name="description" content="Robo India offers great range of products for raspberry pi and SBC Raspberry Pi.">
+       
+        <script src="{% static 'js/jquery-2.1.1.min.js' %}" type="text/javascript"></script>
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+        <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+        <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static '//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/stylesheet.css' %}" rel="stylesheet">
+        <link href="{% static 'css/owl.carousel.css' %}" type="text/css" rel="stylesheet" media="screen">
+        <link href="{% static 'css/owl.transitions.css' %}" type="text/css" rel="stylesheet" media="screen">
+        <script src="{% static 'js/common.js' %}" type="text/javascript"></script>
+        <link href="https://roboindia.com/store/raspberry-pi" rel="canonical">
+        <link href="https://roboindia.com/store/raspberry-pi?page=2" rel="next">
+        <link href="{% static 'images/robo_india.png' %}" rel="icon">
+        <script src="{% static 'js/owl.carousel.min.js' %}" type="text/javascript"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CLMH3MJ5Z3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-CLMH3MJ5Z3');
+        </script></head>
+        
+        <nav id="top">
+            <div class="container">
+                      <div id="top-links" class="nav pull-right">
+                <ul class="list-inline">
+                  <li><a href="https://roboindia.com/store/index.php?route=information/contact"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md">+91 88548 50933 Call / WhatsApp</span></li>
+                  <li class="dropdown"><a href="https://roboindia.com/store/index.php?route=account/account" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md">My Account</span> <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                                  <li><a href="https://roboindia.com/store/index.php?route=account/register">Register</a></li>
+                      <li><a href="https://roboindia.com/store/index.php?route=account/login">Login</a></li>
+                                </ul>
+                  </li>
+                  <li><a href="https://roboindia.com/store/index.php?route=account/wishlist" id="wishlist-total" title="Wish List (0)"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md">Wish List (0)</span></a></li>
+                  <li><a href="https://roboindia.com/store/index.php?route=checkout/cart" title="Shopping Cart"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Shopping Cart</span></a></li>
+                  <li><a href="https://roboindia.com/store/index.php?route=checkout/checkout" title="Checkout"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md">Checkout</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <header>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div id="logo">
+                              <a href="{% url 'index' %}"><img src="{% static 'images/robo-india-logo-6.jpg'%}" title="Robo India" alt="Robo India" class="img-responsive"></a>
+                            </div>
+                </div>
+
+                <!-- serch engine -->
+                <div class="col-sm-5"><div id="search" class="input-group">
+            <input type="text" name="search" value="" placeholder="Search" class="form-control input-lg">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
+            </span
+          </div>      </div>
+                <div class="col-sm-3"><div id="cart" class="btn-group btn-block">
+                <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-inverse btn-block btn-lg dropdown-toggle"><i class="fa fa-shopping-cart"></i> <span id="cart-total">0 item(s) - Rs. 0.00</span></button>
+                <ul class="dropdown-menu pull-right">
+                  <li>
+                  <p class="text-center">Your shopping cart is empty!</p>
+                   </li>
+                </ul>
+          </div>
+          </div>
+              </div>
+            </div    
+
+            <div class="container">
+                <nav id="menu" class="navbar">
+                  <div class="navbar-header"><span id="category" class="visible-xs">Categories</span>
+                    <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+                  </div>
+            
+                  <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                                      <li><a href="https://roboindia.com/store/workshop">Workshops/Training</a></li>
+                                              <li><a href="https://roboindia.com/store/Arduino-accessories-development-Boards-embedded-robotic-system-diecimila-uno-projects">Arduino</a></li>
+                                              <li><a href="https://roboindia.com/store/R-Board-NEO-PRO-8051-AVR-ARM-Microcontroller-micro-controller-Development-board-embedded-system-robotic">Boards</a></li>
+                                              <li class="dropdown"><a href="https://roboindia.com/store/DIY-do-it-your-self-educational-kits-robotics-embedded-system-electronics" class="dropdown-toggle" data-toggle="dropdown">Educational Kit</a>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-inner">
+                                          <ul class="list-unstyled">
+                                              <li><a href="https://roboindia.com/store/DIY-do-it-your-self-educational-kits-robotics-embedded-system-electronics/tinkering-lab">Tinkering Lab (10)</a></li>
+                                            </ul>
+                                        </div>
+                          <a href="https://roboindia.com/store/DIY-do-it-your-self-educational-kits-robotics-embedded-system-electronics" class="see-all">Show All Educational Kit</a> </div>
+                      </li>
+                                              <li class="dropdown"><a href="https://roboindia.com/store/electronics-embedded-system-robotics-analogue-analog-and-digital-sensors" class="dropdown-toggle" data-toggle="dropdown">Sensors</a>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-inner">
+                                          <ul class="list-unstyled">
+                                              <li><a href="https://roboindia.com/store/electronics-embedded-system-robotics-analogue-analog-and-digital-sensors/sensor-ir-sensor-photo-diode-proximity">IR Sensor (4)</a></li>
+                                              <li><a href="https://roboindia.com/store/electronics-embedded-system-robotics-analogue-analog-and-digital-sensors/sensors-temperature-sensor-lm35-ds18b20-thermocouple-max31855k">Temperature (10)</a></li>
+                                              <li><a href="https://roboindia.com/store/electronics-embedded-system-robotics-analogue-analog-and-digital-sensors/fingerprint-sensor">Fingerprint Sensor (3)</a></li>
+                                              <li><a href="https://roboindia.com/store/electronics-embedded-system-robotics-analogue-analog-and-digital-sensors/flexi-force-sensors">Force Sensors (6)</a></li>
+                                              <li><a href="https://roboindia.com/store/electronics-embedded-system-robotics-analogue-analog-and-digital-sensors/metal-detector-cat">Metal Detector (1)</a></li>
+                                            </ul>
+                                        </div>
+                          <a href="https://roboindia.com/store/electronics-embedded-system-robotics-analogue-analog-and-digital-sensors" class="see-all">Show All Sensors</a> </div>
+                      </li>
+                                              <li><a href="https://roboindia.com/store/PCB-Breakout-board-embedded-system-electronics-robotics-india">Breakout Board</a></li>
+                                              <li><a href="https://roboindia.com/store/low-cost-8051-AVR-atmega8-atmega16-atmega-8-16-32-micro-controller-microcontorller-burner-programmer-india-embedded-system-robotics-electronics">Programmers</a></li>
+                                              <li><a href="https://roboindia.com/store/wireless-communication-modules-modems-for-embedded-system-robotic-electronic-project-robo-india">Wireless</a></li>
+                                              <li><a href="https://roboindia.com/store/smt-dip-electronic-components-Integrated-circuits-ic">Electronic Components</a></li>
+                                    </ul>
+                  </div>
+                  
+                </nav>
+            </div>
+            
+    {% block content%}
+    {% endblock%}
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Information</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Consulting Services / Salesforce Practice.</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Annual Return</a></li>
+                        <li><a href="#">Cancellation and Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Extras</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">Gift Certificates</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Specials</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>My Account</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wish List</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p style="font-size:1.6rem; color:#999; font-style: italic;">© 2010-2024 Robo India | //roboindia.com</p>
+        </div>
+    </footer>
+</body>
+</html>
